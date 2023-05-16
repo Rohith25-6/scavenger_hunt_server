@@ -1,0 +1,49 @@
+{
+  "name": "Scavenger Hunt",
+  "version": "1.0.0",
+  "description": "Scavenger Hunt game",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js -e html,css,js,ejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinay-186/Scavenger Hunt.git"
+  },
+  "keywords": [
+    "puzzle",
+    "3-doors",
+    "doors",
+    "door"
+  ],
+  "author": "Vinay Datir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinay-186/Scavenger Hunt/issues"
+  },
+  "homepage": "https://github.com/Vinay-186/Scavenger Hunt#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pg": "^8.10.0",
+    "sequelize": "^6.31.1"
+  }
+}

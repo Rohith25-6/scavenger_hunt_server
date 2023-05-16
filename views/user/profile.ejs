@@ -1,0 +1,36 @@
+<main>
+	<%- include('../partials/userSidebar') %>
+	
+	<div id="main-wrapper">
+		
+		<div class="bg-white1 shadow-sm p-3">
+			<span class="me-3" id="sidebar-toggler-btn"><i class="fas fa-bars"></i></span>
+			<h5 class="m-0 color-theme d-inline-block">Profile</h5>
+		</div>
+		
+		<form action="" method="" class="w-75 border ms-3 my-3 p-4 bg-white1 rounded-2 shadow" style="min-width: 400px;">
+			<div class="row">
+				<div class="col-sm-6 mb-4">
+					<label for="user-name" class="form-label">User Name</label>
+					<input type="text" name="user[userName]" class="form-control" id="user-name" placeholder="Username" value="<%= currentUser.userName %>" disabled>
+				</div>
+			</div>
+	
+			<div class="mb-4">
+				<label for="email" class="form-label">Email</label>
+				<input type="email" id="email" class="form-control" value="<%= currentUser.email %>" disabled>
+			</div>	
+			
+			<%for(let j = 0; j < currentUser.gameScore.length; j++){%>
+				<div class="mb-4">
+					<label for="Game-<%= j + 1 %>" class="form-label">Game-<%= j + 1 %> Score</label>
+					<input type="text" id="Game-<%= j + 1 %>" class="form-control" value="<%= currentUser.gameScore[j] %>" disabled>
+				</div>	
+			<%}%>	
+			
+		</form>
+		
+		
+		
+	</div>
+</main>

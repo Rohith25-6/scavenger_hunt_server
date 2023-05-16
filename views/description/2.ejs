@@ -1,0 +1,19 @@
+<main>
+	<%- include('../partials/userSidebar') %>
+	
+	<div id="main-wrapper" class="container mt-2">
+		<span class="me-3 bg-white1 px-2" id="sidebar-toggler-btn"><i class="fas fa-bars"></i></span>
+		<h1 class="text-center bg-white1">Jumble Word Puzzle</h1>
+		<div class="row">
+			<div class="col-md-8 offset-md-2 bg-white1">
+				<p class="text-center">Test your vocabulary and language skills with this fun jumble word puzzle! There are 5 jumbled words for you to unscramble, and each word has a hint button that reveals the meaning of the word when clicked. You can use the hint buttons if you're stuck, but use them wisely as they are limited!</p>
+				<p class="text-center">Guess the Answer and Crack it!!!</p>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-md-8 offset-md-2 text-center">
+				<a href="/<%=currentUser.userName%>/game/2" class="btn btn-primary">Play Game</a>
+			</div>
+		</div>
+	</div>
+</main>
